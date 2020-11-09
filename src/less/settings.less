@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+
+body {
+  background-color: #F5F5F5;
+  margin: 0;
+}
+a {
+  font-family: 'Exo 2';
+  color: #27D9D6;
+  text-decoration: none;
+  &:hover {
+    color: #4843CC;
+    text-decoration: underline;
+  }
+}
+p {
+  font-family: 'Exo 2';
+  text-align: justify;
+  line-height: 1.5em;
+}
+h1 {
+  font-family: "Exo 2";
+  color: #2ECC71;
+  font-size: 36px;
+}
+h2 {
+  font-family: "Exo 2";
+  color: #2ECC71;
+  font-size: 28px;
+}
+h3 {
+  font-family: "Exo 2";
+  color: #2ECC71;
+  font-size: 24px;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+input {
+  border: 1px solid #2ECC71;
+  font-size: 16px;
+  &:focus {
+    outline: none;
+  }
+}
+textarea {
+  border: 1px solid #2ECC71;
+  font-size: 16px;
+  resize: none;
+  &:focus {
+    outline: none;
+  }
+}
+table {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #2ECC71;
+  border-collapse: collapse;
+}
+tr {
+  border: 1px solid #2ECC71;
+}
+th {
+  border: 1px solid #2ECC71;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  font-family: 'Exo 2';
+  font-size: 16px;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+}
+td {
+  border: 1px solid #2ECC71;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  font-family: 'Exo 2';
+  font-size: 16px;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+}
+label {
+  line-height: 2.5em;
+}
+aside {
+  & .green-invert-button {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+.sp- {
+  &between {
+    display: flex;
+    justify-content: space-between;
+  }
+  &around {
+    display: flex;
+    justify-content: space-around;
+  }
+  &center {
+    display: flex;
+    justify-content: center;
+    &_footer {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.gray-button {
+  border: 1px solid #406665;
+  border-radius: 20px;
+  color: #406665;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  transition: 0.5s;
+  &_header {
+    margin-right: 10%;
+  }
+  &:hover {
+    background-color: #406665;
+    color: white;
+    text-decoration: none;
+  }
+}
+.green-button {
+  border: 1px solid #2ECC71;
+  border-radius: 20px;
+  color: #2ECC71;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 2em;
+  padding-right: 2em;
+  transition: 0.5s;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  &:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #2ECC71;
+  }
+  &_deep-green {
+    border: 1px solid #124D2A;
+    color: #124D2A;
+    margin-top: 15px;
+    &:hover {
+      color: white;
+      background-color: #124D2A;
+    }
+  }
+}
+.green-invert-button {
+  background-color: #2ECC71;
+  color: white;
+  font-family: 'Exo 2';
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border: 1px solid #2ECC71;
+  transition: 0.5s;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #2ECC71;
+    text-decoration: none;
+  }
+}
+.gray-invert-button {
+  background-color: #406665;
+  color: white;
+  font-family: "Exo 2";
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  font-size: 18px;
+  border: 1px solid #406665;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  transition: 0.5s;
+  &:hover {
+    color: #406665;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,426 @@
+.main-wrap {
+  max-width: 1920px;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 25px;
+  grid-column-gap: 4%;
+}
+.post {
+  max-width: 1200px;
+  background-color: white;
+  box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+}
+.search {
+  background-color: black;
+  box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  &__field {
+    height: 35px;
+    padding-left: 10px;
+    width: 85%;
+    margin-right: 3%;
+  }
+  &__button {
+    background-color: black;
+    background-image: url("../img/magnifer.svg");
+    border: none;
+    height: 30px;
+    width: 31px;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    cursor: pointer;
+    background-size: contain;
+    &:hover {
+      background-image: url("../img/magnifer-hov.svg");
+    }
+  }
+}
+.sidebar {
+  background-color: white;
+  box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  padding-bottom: 25px;
+  &__header {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+  }
+  &__title {
+    color: white;
+    font-family: 'Exo 2';
+    font-size: 18px;
+  }
+}
+.sidebar-item {
+  display: block;
+  padding-left: 4%;
+  padding-right: 4%;
+  &:nth-child(2) {
+    padding-top: 15px;
+  }
+  &:hover {
+    text-decoration: none;
+    & .sidebar-item__title {
+      color: #00FC65;
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  &__title {
+    color: #2ECC71;
+    font-family: 'Exo 2';
+    font-size: 18px;
+    line-height: 2em;
+    transition: 0.5s;
+    margin-bottom: 0;
+    padding-bottom: 0.8em;
+  }
+}
+.comment {
+  box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 25px;
+  background-color: white;
+  &__header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+  }
+  &__name {
+    font-size: 18px;
+    font-family: 'Exo 2';
+    color: white;
+  }
+  &__data {
+    font-size: 16px;
+    color: #2ECC71;
+    font-family: 'Exo 2';
+  }
+  &__text {
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Exo 2';
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  &__info {
+    padding-left: 2%;
+  }
+  &__icon {
+    width: 60px;
+    height: auto;
+  }
+}
+.comment-form {
+  margin-top: 25px;
+  background-color: white;
+  box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 30px;
+  &__header {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Exo 2';
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2%;
+  }
+  &__disclaimer {
+    font-family: 'Exo 2';
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  &__text-field {
+    font-family: 'Exo 2';
+    height: 250px;
+    display: block;
+    width: 100%;
+    padding-left: 1%;
+    padding-top: 5px;
+    margin-bottom: 10px;
+  }
+  &__field {
+    display: block;
+    width: 100%;
+    padding-left: 1%;
+    height: 40px;
+    margin-bottom: 10px;
+    &_last {
+      margin-bottom: 20px;
+    }
+  }
+  &__field-name {
+    font-size: 16px;
+    font-family: 'Exo 2';
+  }
+  &__wrap {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.star1 {
+  fill: #2ECC71;
+  transition: 0.5s;
+}
+.star2 {
+  fill: #54FF9B;
+  transition: 0.5s;
+}
+.stars {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 35%;
+  &__item {
+    cursor: pointer;
+    &:hover {
+      & .star1 {
+        fill: #406665;
+      }
+      & .star2 {
+        fill: #70B3B0;
+      }
+    }
+    &_no-active {
+      &:hover {
+        & .star1 {
+          fill: #2ECC71;
+        }
+        & .star2 {
+          fill: #54FF9B;
+        }
+      }
+      & .star1 {
+        fill: #406665;
+      }
+      & .star2 {
+        fill: #70B3B0;
+      }
+    }
+  }
+}
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &__item {
+    cursor: pointer;
+    & svg {
+      height: 45px;
+      width: auto;
+    }
+    &_twitter {
+      &:hover {
+        .twitter1 {
+          fill: #00C3FF;
+        }
+        .twitter2 {
+          fill: url(#twitter-blue_1_);
+        }
+        .twitter3 {
+          fill: url(#twitter-blue_3_);
+        }
+        .twitter4 {
+          fill: url(#twitter-blue_1_);
+        }
+        .twitter7 {
+          fill: url(#twitter-blue_2_);
+        }
+        .twitter8 {
+          fill: url(#twitter-blue_3_);
+        }
+        .twitter9 {
+          fill: url(#twitter-blue_2_);
+        }
+      }
+    }
+    &_facebook {
+      &:hover {
+        & .facebook1 {
+          fill: #1680f6;
+        }
+        & .facebook2 {
+          fill: #439ef4;
+        }
+        & .facebook3 {
+          fill: #4c60dc;
+        }
+      }
+    }
+    &_classmates {
+      & path {
+        transition: 0.5s;
+      }
+      &:hover {
+        & path {
+          fill: #FF9800;
+        }
+      }
+    }
+    &_telegram {
+      &:hover {
+        & .telegram-green1 {
+          fill: #41b4e6;
+        }
+        & .telegram-green2 {
+          fill: #0091c8;
+        }
+      }
+    }
+    &_vk {
+      &:hover {
+        & .vk0 {
+          fill: url(#vk-blue_1_);
+        }
+        & .vk2 {
+          fill: #5678A0;
+        }
+      }
+    }
+  }
+}
+.vk0 {
+  fill: url(#vk-green_1_);
+}
+.vk1 {
+  transition: 0.5s;
+  fill: #FFFFFF;
+}
+.vk2 {
+  transition: 0.5s;
+  fill: #2ECC71;
+}
+.telegram-green1 {
+  transition: 0.5s;
+  fill: #2ECC71;
+}
+.telegram-green2 {
+  transition: 0.5s;
+  fill: #208C4D;
+}
+.telegram-green3 {
+  transition: 0.5s;
+  fill: #FFFFFF;
+}
+.telegram-green4 {
+  transition: 0.5s;
+  fill: #D2D2D7;
+}
+.telegram-green5 {
+  transition: 0.5s;
+  fill: #B9B9BE;
+}
+.facebook1 {
+  transition: 0.5s;
+  fill: #2ECC71;
+}
+.facebook2 {
+  transition: 0.5s;
+  fill: #71D59A;
+}
+.facebook3 {
+  transition: 0.5s;
+  fill: #29B362;
+}
+.facebook4 {
+  transition: 0.5s;
+  fill: #FFFFFF;
+}
+
+.twitter1 {
+  transition: 0.5s;
+  fill: #2ECC71;}
+.twitter2 {
+  transition: 0.5s;
+  fill: url(#twitter-green_3_);
+}
+.twitter3 {
+  transition: 0.5s;
+  fill: url(#twitter-green_4_);
+}
+.twitter4 {
+  transition: 0.5s;
+  fill: url(#twitter-green_5_);
+}
+.twitter5 {
+  transition: 0.5s;
+  fill: #FFFFFF;
+}
+
+.twitter7 {
+  transition: 0.5s;
+  fill: url(#twitter-green_8_);
+}
+.twitter8 {
+  transition: 0.5s;
+  fill: url(#twitter-green_9_);
+}
+.twitter9 {
+  transition: 0.5s;
+  fill: url(#twitter-green_10_);
+}
+.view0 {
+  transition: 0.5s;
+  fill: #2ECC71;
+}
+.view1 {
+  transition: 0.5s;
+  fill: #54FF9B;
+}
+.crumb {
+  color: #2ECC71;
+  font-family: "Exo 2";
+  font-size: 14px;
+  &__item {
+    color: #2ECC71;
+  }
+}
+.view {
+  display: flex;
+  align-items: center;
+  &:hover {
+    & .view0 {
+      fill: #1185e0;
+    }
+    & .view1 {
+      fill: #4dcfe0;
+    }
+    & .view__count {
+      color: #4843CC;
+    }
+  }
+  &__icon {
+    margin-right: 15px;
+    & svg {
+      width: 22px;
+      height: auto;
+    }
+  }
+  &__count {
+    font-family: "Exo 2";
+    font-size: 14px;
+    color: #2ECC71;
+    transition: 0.5s;
+  }
+}
