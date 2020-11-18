@@ -91,6 +91,9 @@ aside {
     margin-bottom: 15px;
   }
 }
+img {
+  max-width: 100%;
+}
 .sp- {
   &between {
     display: flex;
@@ -169,6 +172,21 @@ aside {
   transition: 0.5s;
   cursor: pointer;
   text-align: center;
+  &_text {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -0.24em;
+  }
+  &_mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40%;
+  }
+  &__icon {
+    width: 20px;
+    height: auto;
+  }
   &:hover {
     background-color: rgba(0, 0, 0, 0);
     color: #2ECC71;

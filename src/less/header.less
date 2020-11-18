@@ -125,14 +125,22 @@ header {
   display: none;
 }
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   padding-bottom: 30px;
   padding-top: 15px;
+  background-color: black;
   display: none;
+  & .gray-button {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+  & .green-button {
+    margin-top: 0.8em;
+  }
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -174,8 +182,8 @@ header {
     font-family: "Exo 2";
     color: white;
     transition: 0.5s;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     &:hover {
       color: #21FFFB;
     }

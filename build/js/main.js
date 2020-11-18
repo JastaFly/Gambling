@@ -27,6 +27,14 @@ function share() {
     console.log(title, url)
 }
 
+function showMenu(number, menu) {
+    let elem = document.getElementsByClassName('mobile-menu')
+    $(elem[number]).slideToggle()
+    if (number === 0) {
+        menu.children[0].classList.remove('active')
+    }
+}
+
 
 
 
