@@ -43,6 +43,14 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .article {
+    &__title {
+      font-size: 18px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+  }
   .comment-form__text-field {
     padding-left: 1.5%;
   }
@@ -105,7 +113,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .comment__text {
     margin-top: 0;
   }
@@ -128,6 +136,23 @@
     &__button {
       width: 20px;
       height: 20px;
+    }
+  }
+  .footer-link {
+    &__title {
+      font-size: 14px;
+    }
+
+    &__item {
+      font-size: 12px;
+    }
+  }
+  .article {
+    &__title {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 12px;
     }
   }
 }
@@ -191,16 +216,6 @@
     width: 45%;
   }
 
-  .footer-link {
-    &__title {
-      font-size: 14px;
-    }
-
-    &__item {
-      font-size: 12px;
-    }
-  }
-
   .majority__text {
     width: 40%;
   }
@@ -226,8 +241,26 @@
     }
   }
 }
+@media screen and (max-width: 900px) {
+  .article {
+    &__title {
+      font-size: 14px;
+    }
+    &__description {
+      font-size: 10px;
+    }
+  }
+}
 
 @media screen and (max-width: 856px) {
+  .article {
+    &__title {
+      font-size: 22px;
+    }
+    &__description {
+      font-size: 16px;
+    }
+  }
   .logo svg {
     width: 150px;
   }
@@ -323,6 +356,12 @@
   }
 
   .sidebar {
+    &__wrap {
+      display: grid;
+      grid-template-columns: 5fr 5fr;
+      grid-column-gap: 5%;
+      grid-row-gap: 30px;
+    }
     &__header {
       height: 50px;
     }
@@ -334,6 +373,7 @@
 
   .sidebar-item__title {
     font-size: 18px;
+    text-align: center;
   }
 
   aside {
@@ -374,6 +414,16 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .article {
+    &__title {
+      font-size: 18px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+  }
+}
 
 @media screen and (max-width: 732px) {
   .comment-form__text-field {
@@ -382,6 +432,19 @@
 
   .comment-form__field {
     padding-left: 1.6%;
+  }
+}
+@media screen and (max-width: 654px) {
+  .category-header__title {
+    font-size: 16px;
+  }
+  .article {
+    &__title {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 12px;
+    }
   }
 }
 
@@ -402,6 +465,28 @@
 }
 
 @media screen and (max-width: 568px) {
+  .sidebar {
+    &__title {
+      font-size: 16px;
+    }
+    &__header {
+      height: 40px;
+    }
+  }
+  .category-header {
+    height: 40px;
+    &__title {
+      font-size: 14px;
+    }
+  }
+  .article {
+    &__title {
+      font-size: 14px;
+    }
+    &__description {
+      font-size: 10px;
+    }
+  }
   .comment-form__text-field {
     width: 98%;
   }
@@ -442,6 +527,9 @@
 }
 
 @media screen and (max-width: 540px) {
+  .sidebar-item__title {
+    font-size: 16px;
+  }
   .footer-link {
     &__title {
       font-size: 8px;
@@ -458,6 +546,38 @@
 }
 
 @media screen and (max-width: 415px) {
+  .sidebar {
+    &__title {
+      font-size: 18px;
+    }
+    &__header {
+      height: 50px;
+    }
+    &__wrap {
+      display: block;
+    }
+  }
+  .category-header {
+    height: 50px;
+    &__title {
+      font-size: 18px;
+    }
+  }
+  .category-wrap {
+    display: block;
+  }
+  .article {
+    margin-bottom: 30px;
+    &__title {
+      font-size: 22px;
+    }
+    &__description {
+      font-size: 16px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   .main-wrap {
     padding-top: 10px;
   }
@@ -609,6 +729,16 @@
     }
   }
 }
+@media screen and (max-width: 376px) {
+  .article {
+    &__title {
+      font-size: 18px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+  }
+}
 @media screen and (max-width: 360px) {
   .payment__item svg {
     height: 15px;
@@ -623,13 +753,51 @@
   }
 }
 @media screen and (max-width: 320px) {
+  aside .green-invert-button {
+    width: 35%;
+  }
+  .gray-invert-button {
+    width: 35%;
+  }
   .green-invert-button_mobile {
     margin-left: 26%;
   }
 }
 @media screen and (max-width: 280px) {
+  .green-invert-button {
+    width: 40%;
+  }
+  .gray-invert-button {
+    width: 40%;
+  }
+  .sidebar {
+    &__header {
+      font-size: 40px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+  }
+  .search__field {
+    width: 80%;
+  }
   .green-invert-button_mobile {
     margin-left: 22%;
+  }
+  .article {
+    padding-bottom: 5px;
+    &__title {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+  }
+  .category-header {
+    height: 40px;
+    &__title {
+      font-size: 16px;
+    }
   }
 }
 @media screen and (max-width: 280px) {
@@ -646,6 +814,7 @@
     top: 90%;
   }
 }
+
 @media screen and (max-height: 736px) {
   .main-menu-mobile {
     top: 94%;
