@@ -71,6 +71,10 @@ function webServer(cb) {
     browserSync(config);
     cb();
 }
+function sound() {
+    return src('./src/sound/**/*')
+        .pipe(dest('./build/sound'))
+}
 
 function watchAll(cb) {
     watch('./src/*.html', html);
@@ -81,6 +85,7 @@ function watchAll(cb) {
     watch('./src/libs/**/*', libs);
     watch('./src/js/**/*', js);
     watch('./src/php/**/*', php);
+    watch('./src/sound/**/*', sound);
     cb();
 }
 

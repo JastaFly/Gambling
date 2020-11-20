@@ -482,3 +482,77 @@
     height: auto;
   }
 }
+.bsod-main{
+  background-color: #4843CC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.bsod-wrap {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.bsod {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  &__title {
+    font-family: "Press Start 2P";
+    font-size: 48px;
+    text-align: center;
+    color: white;
+  }
+  &__small {
+    font-family: "Press Start 2P";
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+  &__big {
+    font-family: "Press Start 2P";
+    text-align: center;
+    font-size: 28px;
+    color: white;
+  }
+  &__button {
+    font-family: "Press Start 2P";
+    font-size: 18px;
+    background-color: #39CC76;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    transition: 0.5s;
+    border: 4px solid #39CC76;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+      text-decoration: none;
+      color: #39CC76;
+    }
+  }
+  &__command {
+    font-family: "Press Start 2P";
+    color: white;
+    font-size: 18px;
+  }
+  &__dot {
+    animation: blink 1s infinite cubic-bezier(.47,-.44,.49,1.46);
+  }
+}
